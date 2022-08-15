@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { get } from '../services/get'
 import { Items, Detail } from '../typings'
 
-const baseUrl = "/api/items"
+const baseUrl = '/api/items'
 
 export const search = (textSearch: string | null) => {
 	const [result, setResult] = useState<Items>()

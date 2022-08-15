@@ -22,10 +22,12 @@ const Card: FC<CardProps> = (props: CardProps) => {
 					<div className='card-container-img'>
 						<img src={picture} />
 					</div>
-					<div className='container-img-description'>
-						<h2>Descripción del producto</h2>
-						<p>{description}</p>
-					</div>
+					{description && (
+						<div className='container-img-description'>
+							<h2>Descripción del producto</h2>
+							<p>{description}</p>
+						</div>
+					)}
 				</div>
 				<div className='w-30'>
 					<span className='card-info-title'>

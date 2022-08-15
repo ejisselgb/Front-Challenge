@@ -15,6 +15,7 @@ $theme: (
 	background-color: #ededed,
 	color-primary-link: #3483fa,
 	color-link: #666,
+	color-border: rgba(237, 237, 237, 0.5),
 );
 
 $search-button-color: map-get($theme, second-color);

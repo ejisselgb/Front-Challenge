@@ -1,4 +1,5 @@
 @import '../../styles/variables/variables.scss';
+@import '../../styles/mixin/mixin.scss';
 
 .container-list {
 	border-radius: 4px;
@@ -14,12 +15,12 @@
 	}
 
 	li + li {
-		border-top: 2px solid rgba(237, 237, 237, 0.5);
+		border-top: 2px solid map-get($theme, color-border);
 	}
 }
 
 .container-item {
-	display: flex;
+	@include make-row();
 	width: 100%;
 	padding: 10px;
 	color: map-get($theme, font-color-primary);
@@ -42,18 +43,21 @@
 }
 
 .flex-container {
-	display: flex;
-	align-items: center;
+	@include container(flex, center, center);
 }
 
 .img-container {
 	width: 100%;
 	border-radius: 4px;
+
+	@media screen and (max-width: map-get($grid-breakpoints, sm)) {
+		width: 190px;
+	}
 }
 
 .tag-price {
 	color: map-get($theme, font-color-primary);
-	display: flex;
+	@include make-row();
 	font-size: 25px;
 	font-weight: 400;
 	line-height: 1;
@@ -72,7 +76,7 @@
 	width: 80%;
 	margin-top: 20px;
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: map-get($grid-breakpoints, sm)) {
 		width: 100%;
 	}
 
