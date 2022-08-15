@@ -1,0 +1,87 @@
+@import '../../styles/variables/variables.scss';
+
+.container-card {
+	background-color: map-get($theme, background-color-input);
+	border-radius: 4px;
+	padding: 30px 30px 30px 20px;
+}
+
+.container-card-info {
+	display: flex;
+	flex-direction: row;
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+	}
+}
+
+.card-button {
+	cursor: pointer;
+	background-color: map-get($theme, color-primary-link);
+	border-color: transparent;
+	color: map-get($theme, background-color-input);
+	border-radius: 6px;
+	font-size: 16px;
+	height: 48px;
+	width: 100%;
+}
+
+.card-title {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 10px 0px 20px 0;
+}
+
+.card-price {
+	font-size: 40px;
+}
+
+.card-info-title {
+	font-size: 13px;
+}
+
+.card-title-amount {
+	font-size: 40px;
+
+	sup {
+		font-size: 20px;
+	}
+}
+
+.w-30 {
+	width: 30%;
+	color: map-get($theme, font-color-primary);
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
+}
+
+.w-70 {
+	width: 70%;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.card-container-img {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+.container-img-description h2 {
+	font-weight: 500;
+	color: map-get($theme, font-color-primary);
+}
+
+.container-img-description p {
+	line-height: 1.5;
+	font-size: 15px;
+	color: map-get($theme, color-link);
+}

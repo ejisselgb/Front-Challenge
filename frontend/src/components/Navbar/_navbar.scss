@@ -1,0 +1,63 @@
+@import '../../styles/variables/variables.scss';
+@import '../../styles/mixin/mixin.scss';
+
+.nav-header {
+	background-color: map-get($theme, primary-color);
+}
+
+.container {
+	@include container(flex, center, center);
+}
+
+.row {
+	@include make-row();
+}
+
+.nav-bar {
+	&.obj-fit {
+		object-fit: contain;
+	}
+
+	&.vertical-align {
+		vertical-align: middle;
+	}
+}
+
+.input-search {
+	padding: 7px 60px 9px 15px;
+	border-radius: 2px;
+	background-color: map-get($theme, background-color-input);
+	border: none;
+	color: map-get($theme, font-color-primary);
+	font-size: 16px;
+	width: 100%;
+	height: 20px;
+	box-shadow: $box-shadow;
+	width: 800px;
+
+	@media screen and (max-width: map-get($grid-breakpoints, lg)) {
+		width: 500px;
+	}
+
+	@media screen and (max-width: map-get($grid-breakpoints, md)) {
+		width: 400px;
+	}
+
+	@media screen and (max-width: map-get($grid-breakpoints, sm)) {
+		width: 100%;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.search-button {
+	width: 35px;
+	border: none;
+	box-shadow: $box-shadow;
+	font-size: 20px;
+	cursor: $cursor;
+	background: url(../../assets/ic_Search.png) center center no-repeat;
+	background-color: $search-button-color;
+}

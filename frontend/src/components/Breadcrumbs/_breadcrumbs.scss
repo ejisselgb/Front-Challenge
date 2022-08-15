@@ -1,0 +1,23 @@
+@import '../../styles/variables/variables.scss';
+@import '../../styles/mixin/mixin.scss';
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+
+	li {
+		display: inline;
+		@include font(14px);
+		color: map-get($theme, color-link);
+	}
+
+	li + li:before {
+		padding: 8px;
+		color: map-get($theme, color-link);
+		content: '\203A';
+	}
+
+	li:last-child span {
+		font-weight: 600;
+	}
+}

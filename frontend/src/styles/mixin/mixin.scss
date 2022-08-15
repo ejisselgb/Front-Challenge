@@ -1,0 +1,17 @@
+@mixin container($display, $align, $justify) {
+	display: $display;
+	justify-content: $align;
+	align-items: $justify;
+}
+
+@mixin make-row() {
+	display: flex;
+}
+
+@mixin font($px) {
+	font-size: $px;
+}
+
+@mixin direction($direction) {
+	flex-direction: $direction;
+}

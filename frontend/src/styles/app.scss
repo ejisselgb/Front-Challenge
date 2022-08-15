@@ -1,0 +1,30 @@
+@import './variables/variables.scss';
+@import './mixin/mixin.scss';
+body {
+	margin: 0;
+	padding: 0;
+	background-color: map-get($theme, background-color);
+	font-family: $font-familiy;
+}
+
+.flex {
+	display: flex;
+
+	&.flex-row {
+		flex-direction: row;
+	}
+
+	&.items-center {
+		align-items: center;
+	}
+
+	&.justify-center {
+		justify-content: center;
+	}
+}
+
+.padding {
+	&.pa {
+		padding: 10px;
+	}
+}

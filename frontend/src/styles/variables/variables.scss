@@ -1,0 +1,44 @@
+$box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+$grid-breakpoints: (
+	sm: 625px,
+	md: 768px,
+	lg: 1024px,
+);
+
+$theme: (
+	primary-color: rgb(255, 241, 89),
+	font-color-second: #0a0a0a,
+	background-color-input: #fff,
+	font-color-primary: #333,
+	second-color: #eeeeee,
+	background-color: #ededed,
+	color-primary-link: #3483fa,
+	color-link: #666,
+);
+
+$search-button-color: map-get($theme, second-color);
+
+$justify-content: (
+	center: center,
+	end: end,
+	start: start,
+);
+
+$directions: (
+	row: row,
+	column: column,
+);
+
+$container-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
+);
+
+$cursor: pointer;
+
+$font-familiy: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
+	Arial, sans-serif;

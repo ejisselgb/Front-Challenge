@@ -1,0 +1,12 @@
+// UI settings
+@import './app.scss';
+
+// Components
+@import '../components/Navbar/navbar';
+@import '../components/Breadcrumbs/breadcrumbs';
+@import '../components/ShowItems/showitems';
+@import '../components/Card/card';
+@import '../components/NotFound/notfound';
+
+// Views
+@import './views/result';

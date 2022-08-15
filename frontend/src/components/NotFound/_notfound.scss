@@ -1,0 +1,32 @@
+@import '../../styles/variables/variables.scss';
+
+.container-notfound {
+	margin: 48px auto;
+	max-width: 1018px;
+	min-height: 204px;
+	background-color: map-get($theme, background-color-input);
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-notfound-img img {
+	margin-right: 35px;
+}
+
+.container-notfound-txt h3 {
+	letter-spacing: 1.5px;
+}
+
+.container-notfound-txt ul {
+	padding-left: 15px;
+
+	li {
+		margin-bottom: 5px;
+	}
+
+	li a {
+		color: map-get($theme, color-primary-link);
+	}
+}
